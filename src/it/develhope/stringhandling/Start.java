@@ -3,26 +3,27 @@ package it.develhope.stringhandling;
 public class Start {
     public static void main(String[] args) {
 
-        String string1 = "United Kingdom";
+        System.out.println("------------Starting----------------");
 
+        String string1 = "United Kingdom";
         String string2 = "Germany";
 
         String sub1 = string1.substring(0,6);
-
         String sub2 = string1.substring(7,14);
 
-        String s3 = sub1.concat(string2).concat(sub2);
+        String s3 = sub1 + " " + string2 + " " + sub2;
 
-        s3 = (s3.toUpperCase()).replaceAll("", " ");
+        s3 = s3.toUpperCase();
 
         char[] charArray = s3.toCharArray();
 
-        for (int i=0; i<charArray.length; i++){
-            System.out.print(charArray[i]);
+        System.out.println(charArray);
+
+        System.out.println("--------------------------------------");
 
         }
     }
-}
+
 /*
 define a string called string1 that has assigned the value "United Kingdom"
 define a string called string2 that has assigned the value "Germany"
